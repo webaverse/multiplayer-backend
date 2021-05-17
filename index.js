@@ -65,8 +65,8 @@ try {
   console.warn(`failed to load ${privkeyPath}`);
 }
 
-const PORT = parseInt(process.env.HTTP_PORT, 10) || 1111;
-const HTTPS_PORT = parseInt(process.env.HTTPS_PORT, 10) || 1112;
+const PORT = parseInt(process.env.HTTP_PORT, 10) || 80;
+const HTTPS_PORT = parseInt(process.env.HTTPS_PORT, 10) || 443;
 
 (async () => {
 
