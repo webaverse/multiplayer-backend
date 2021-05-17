@@ -153,9 +153,9 @@ class WorldManager {
               MEDIASOUP_LISTEN_IP: privateIp,
               MEDIASOUP_ANNOUNCED_IP: publicIp,
               // NOTE: These certs will not be available in CI-produced builds
-              HTTPS_CERT_FULLCHAIN: fullChainExists ? fullchain : null,
-              HTTPS_CERT_PRIVKEY: privkeyExists ? privkey : null,
-              AUTH_KEY: privkeyExists ? privkey : null,
+              HTTPS_CERT_FULLCHAIN: fullChainExists ? fullchain : undefined,
+              HTTPS_CERT_PRIVKEY: privkeyExists ? privkey : undefined,
+              AUTH_KEY: privkeyExists ? privkey : undefined,
               DATA_FILE: dataFilePath,
               // NUM_WORKERS: 2,
             },
