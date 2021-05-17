@@ -129,9 +129,9 @@ class WorldManager {
           
           console.log('check 6');
 
-          const fullchain = path.join('..', 'exokit-backend', 'certs', 'fullchain.pem');
+          const fullchain = path.join(__dirname, '..', 'certs', 'fullchain.pem');
           let fullChainExists = fs.existsSync(fullchain);       
-          const privkey = path.join('..', 'exokit-backend', 'certs', 'privkey.pem');
+          const privkey = path.join(__dirname, '..', 'certs', 'privkey.pem');
           let privkeyExists = fs.existsSync(privkey);     
           if(!fullChainExists || !privkeyExists){
             console.warn("WARNING: Couldn't retrieve SSL certs locally");
