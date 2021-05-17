@@ -20,6 +20,7 @@
   "dependencies": {
     "aws-sdk": "^2.907.0",
     "express": "^4.17.1",
+    "forever": "^3.0.4",
     "ps-node": "^0.1.6"
   }
 }
